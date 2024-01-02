@@ -6,7 +6,9 @@ import Favorite from "../screens/tabs/Favorite";
 const TabNavigation = () => {
   const Tab = createBottomTabNavigator();
   return (
-    <Tab.Navigator>
+    <Tab.Navigator screenOptions={
+      { headerShown: false }
+    }>
       <Tab.Screen name="HomeScreen" component={Home} />
       <Tab.Screen name="Favorite" component={Favorite} />
     </Tab.Navigator>

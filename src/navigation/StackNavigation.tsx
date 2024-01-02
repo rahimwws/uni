@@ -5,7 +5,7 @@ import OnBoarding from "../screens/OnBoarding";
 const StackNavigation = () => {
   const Stack = createNativeStackNavigator();
   return (
-    <Stack.Navigator initialRouteName="onboarding">
+    <Stack.Navigator initialRouteName="Home">
       <Stack.Screen name="Home" component={TabNavigation} options={{headerShown:false}} />
       <Stack.Screen name="onboarding" component={OnBoarding} options={{headerShown:false}}/>
     </Stack.Navigator>
